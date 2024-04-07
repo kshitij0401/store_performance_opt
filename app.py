@@ -65,10 +65,10 @@ def main():
     st.title('Store Performance Prediction')
 
     #create input fields for selected features
-    staff = st.slider('Staff', min_value=0, max_value=10, value=10, step=1)
-    window = st.slider('Window', min_value=0, max_value=130, value=5, step=1)
+    staff = st.slider('Staff', min_value=0, max_value=10, value=5, step=1)
+    window = st.slider('Window Size', min_value=100, max_value=130, value=100, step=1)
     location = st.selectbox('Location', label_encoder_location.classes_)
-    competition_score = st.slider('Competition Score', min_value=0, max_value=20, value=10, step=1)
+    competition_score = st.slider('Competition Score', min_value=10, max_value=20, value=10, step=1)
    
    
     #map location to numerical value
